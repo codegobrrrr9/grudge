@@ -1,0 +1,13 @@
+---
+description: grudge — when asked for a retro, or when the same correction comes up again, mine reviews/sessions/commits/CI for what keeps repeating and propose AGENTS.md rules with evidence.
+globs:
+alwaysApply: true
+---
+
+# grudge
+
+1. When the user asks for a retro, asks why they keep repeating themselves, or the same correction comes up a second time, run `node scripts/grudge.js --json` (copy `grudge.js` from https://github.com/codegobrrrr9/grudge) from the project root.
+2. For every finding, write one rule: imperative, one line, no softening. Put the evidence after it: `(reviewers said it 4 times in 4 PRs: #6486, #6577, #6810)`.
+3. Propose the rules; do not write them into AGENTS.md, CLAUDE.md or `.cursor/rules` until the user says yes. The `stale` and `duplicate` findings are fixes to existing rules, apply those with the rest.
+4. A finding with one occurrence is not a rule. Say "nothing repeated often enough" when that is the answer.
+5. Never invent a rule the evidence does not show, and never quote a review comment as if it were a rule without rewriting it.

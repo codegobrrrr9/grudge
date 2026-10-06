@@ -1,0 +1,18 @@
+{
+  "name": "grudge",
+  "owner": { "name": "codegobrrrr9", "url": "https://github.com/codegobrrrr9" },
+  "metadata": { "description": "What you keep correcting, turned into agent rules with evidence.", "version": "0.1.0" },
+  "plugins": [
+    {
+      "name": "grudge",
+      "source": "./",
+      "description": "Mines PR review comments, Claude Code sessions, fix-up commits and CI red streaks for what keeps coming back, and drafts the AGENTS.md rules with evidence. Adds /retro.",
+      "version": "0.1.0",
+      "author": { "name": "codegobrrrr9" },
+      "homepage": "https://github.com/codegobrrrr9/grudge",
+      "license": "MIT",
+      "keywords": ["agents-md", "retro", "code-review"],
+      "category": "productivity"
+    }
+  ]
+}

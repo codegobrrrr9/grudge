@@ -1,0 +1,12 @@
+{
+  "name": "grudge-retro",
+  "version": "0.1.0",
+  "description": "What you keep correcting, turned into agent rules with evidence. Mines PR review comments, Claude Code sessions, fix-up commits and CI red streaks for the things that keep coming back.",
+  "type": "module",
+  "bin": { "grudge": "./skills/grudge/scripts/grudge.js" },
+  "scripts": { "test": "node --test tests/*.test.js" },
+  "repository": { "type": "git", "url": "https://github.com/codegobrrrr9/grudge" },
+  "keywords": ["agents-md", "claude-md", "code-review", "retro", "coding-agents", "claude-code", "cursor", "codex", "claude-skills", "agent-skills"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "grudge",
+  "version": "0.1.0",
+  "description": "What you keep correcting, turned into agent rules with evidence: PR review comments, sessions, fix-up commits, CI red streaks.",
+  "author": { "name": "codegobrrrr9", "url": "https://github.com/codegobrrrr9" },
+  "homepage": "https://github.com/codegobrrrr9/grudge",
+  "repository": "https://github.com/codegobrrrr9/grudge",
+  "license": "MIT",
+  "keywords": ["agents-md", "claude-md", "retro", "code-review", "claude-code"]
+}

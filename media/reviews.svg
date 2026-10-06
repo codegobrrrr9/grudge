@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#0b0f14"/>
+  <text x="80" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="36" fill="#c9d4e0" font-weight="bold">A year of review comments. The ones reviewers keep writing.</text>
+  <text x="80" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#8899aa">grudge --source reviews on two public repos, no configuration, bots and replies dropped</text>
+  <rect x="80" y="195" width="700" height="600" rx="16" fill="#111821" stroke="#1f2a36" stroke-width="2"/>
+  <rect x="820" y="195" width="700" height="600" rx="16" fill="#111821" stroke="#1f2a36" stroke-width="2"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="24">
+    <text x="110" y="245" fill="#8899aa">vitest-dev/vitest · 1,093 human comments · 404 PRs</text>
+    <text x="110" y="300" fill="#7fd1a8" font-weight="bold">×7 in 7 PRs</text>
+    <text x="110" y="334" fill="#c9d4e0">"Failure without the fix:" + screenshot,</text>
+    <text x="110" y="364" fill="#c9d4e0">on every bug-fix PR</text>
+    <text x="110" y="420" fill="#7fd1a8" font-weight="bold">×5 in 5 PRs</text>
+    <text x="110" y="454" fill="#c9d4e0">"Why would the test fail without the fix?"</text>
+    <text x="110" y="510" fill="#7fd1a8" font-weight="bold">×5 in 3 PRs</text>
+    <text x="110" y="544" fill="#c9d4e0">"ask your agent to read AGENTS.md"</text>
+    <text x="110" y="600" fill="#7fd1a8" font-weight="bold">×3 in 3 PRs</text>
+    <text x="110" y="634" fill="#c9d4e0">"Your AI is a bit too verbose"</text>
+    <text x="110" y="720" fill="#6b7a8c">8 themes. The other ~1,000 comments</text>
+    <text x="110" y="750" fill="#6b7a8c">were one-offs, and stay out of the rules.</text>
+
+    <text x="850" y="245" fill="#8899aa">fastify/fastify · 266 human comments · 125 PRs</text>
+    <text x="850" y="300" fill="#7fd1a8" font-weight="bold">×6 in 6 PRs, 2 reviewers</text>
+    <text x="850" y="334" fill="#c9d4e0">"can you add tests per route?"</text>
+    <text x="850" y="364" fill="#c9d4e0">"Can you add test with null"</text>
+    <text x="850" y="394" fill="#c9d4e0">"We need to add few more tests"</text>
+    <text x="850" y="450" fill="#ffd166">→ Every change ships with its tests.</text>
+    <text x="850" y="520" fill="#ff6b6b" font-weight="bold">Known miss</text>
+    <text x="850" y="554" fill="#c9d4e0">"please use describe and avoid await t.test"</text>
+    <text x="850" y="584" fill="#c9d4e0">said 3 times by the maintainer; grudge links</text>
+    <text x="850" y="614" fill="#c9d4e0">2 of the 3 and stays silent below 3.</text>
+    <text x="850" y="720" fill="#6b7a8c">123 of 389 comments were bots or AI reviews.</text>
+    <text x="850" y="750" fill="#6b7a8c">Dropped before counting.</text>
+  </g>
+  <text x="80" y="850" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#6b7a8c">github.com/codegobrrrr9/grudge · the agent rewrites each theme as one rule, with the PR numbers behind it</text>
+</svg>

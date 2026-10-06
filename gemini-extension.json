@@ -1,0 +1,6 @@
+{
+  "name": "grudge",
+  "version": "0.1.0",
+  "description": "What you keep correcting, turned into agent rules with evidence.",
+  "contextFileName": "AGENTS.md"
+}
