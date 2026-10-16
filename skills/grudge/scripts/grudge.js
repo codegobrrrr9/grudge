@@ -18,7 +18,7 @@
 // Zero dependencies. Node 18+. GITHUB_TOKEN (or GH_TOKEN) raises the API limit from 60 to 5000 requests an hour.
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, realpathSync } from 'node:fs';
 import { join, resolve, basename, dirname } from 'node:path';
 import { homedir } from 'node:os';
 import { fileURLToPath } from 'node:url';
@@ -482,7 +482,10 @@ export function apply(root, file, section) {
 }
 
 // ---------- cli ----------
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+// Compare real paths: when the script is reached through a symlink or junction (~/.claude/skills/<name>),
+// import.meta.url is the resolved target while argv[1] is the link, and a plain string compare says "not main".
+const samePath = (a, b) => { try { return realpathSync(a) === realpathSync(b); } catch { return a === b; } };
+if (process.argv[1] && samePath(resolve(process.argv[1]), fileURLToPath(import.meta.url))) {
   const a = process.argv.slice(2);
   const flag = (k, d) => { const i = a.indexOf(k); return i >= 0 ? a[i + 1] : d; };
   const has = k => a.includes(k);
